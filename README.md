@@ -1,3 +1,12 @@
+# Snake Versus
+A game i'm making for learning purposes, to understand some concepts like design patterns and new tools, such as WebSocket. Hope it will be useful for you too!
+
+This repo contains the backend of this project.
+
+Frontend repository: https://github.com/vini-gpereira/snake-versus-frontend
+
+# Project
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
