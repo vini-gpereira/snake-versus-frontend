@@ -3,7 +3,7 @@ A game i'm making for learning purposes, to understand some concepts like design
 
 This repo contains the backend of this project.
 
-Frontend repository: https://github.com/vini-gpereira/snake-versus-frontend
+Backend repository: https://github.com/vini-gpereira/snake-versus-backend
 
 # Project
 
