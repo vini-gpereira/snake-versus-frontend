@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styles from './layout.module.css';
 
 interface LayoutProps {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 
 const Layout: FC<LayoutProps> = ({ children }: LayoutProps): JSX.Element => {
