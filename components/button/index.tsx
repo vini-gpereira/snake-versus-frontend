@@ -10,10 +10,13 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({ href, action, label, className }: ButtonProps): JSX.Element => {
+  const externalClass = className ? className : '';
+  const btnClass = `${styles.btn} bit-border ${externalClass}`;
+
   if (href) {
     return (
       <Link href={href}>
-        <a className={styles.btn + ' ' + className} target="_blank" rel="noopener noreferrer">
+        <a className={btnClass} target="_blank" rel="noopener noreferrer">
           {label}
         </a>
       </Link>
@@ -22,7 +25,7 @@ const Button: FC<ButtonProps> = ({ href, action, label, className }: ButtonProps
 
   if (action) {
     return (
-      <button className={styles.btn + ' ' + className} onClick={action}>
+      <button className={btnClass} onClick={action}>
         {label}
       </button>
     );

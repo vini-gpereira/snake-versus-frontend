@@ -7,3 +7,29 @@
 body {
   @apply bg-primary font-default;
 }
+
+.bit-border {
+  @apply relative;
+}
+
+.bit-border:after, .bit-border:before {
+  content: '';
+  
+  @apply box-border absolute;
+}
+
+.bit-border:before {
+  top: -5px;
+  height: calc(100% + 10px);
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  @apply left-0 w-full border-solid border-secondary;
+}
+
+.bit-border:after {
+  left: -5px;
+  width: calc(100% + 10px);
+  border-left-width: 5px;
+  border-right-width: 5px;
+  @apply top-0 h-full border-solid border-secondary;
+}
