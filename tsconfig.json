@@ -22,7 +22,8 @@
     "outDir": "./dist/",
     "paths": {
       "@/*": ["~/*"],
-      "@/styles/*": ["styles/*"]
+      "@/styles/*": ["styles/*"],
+      "@/components/*": ["components/*"]
     },
   },
   "include": [
