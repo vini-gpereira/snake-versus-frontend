@@ -18,9 +18,7 @@ const Button: FC<ButtonProps> = ({ href, action, label, className, disabled }: B
   if (href) {
     return (
       <Link href={href}>
-        <a className={btnClass} target="_blank" rel="noopener noreferrer">
-          {label}
-        </a>
+        <a className={btnClass}>{label}</a>
       </Link>
     );
   }

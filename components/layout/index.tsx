@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import Link from 'next/link';
 import styles from './layout.module.css';
 
 interface LayoutProps {
@@ -8,7 +9,9 @@ interface LayoutProps {
 const Layout: FC<LayoutProps> = ({ children }: LayoutProps): JSX.Element => {
   return (
     <div className={styles.layout}>
-      <h1 className={styles.title}>SnakeVersus</h1>
+      <Link href="/">
+        <a className={styles.title}>SnakeVersus</a>
+      </Link>
       {children}
     </div>
   );
