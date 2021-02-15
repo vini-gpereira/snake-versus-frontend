@@ -7,11 +7,13 @@ interface ButtonProps {
   action?: () => void;
   label: string;
   className?: string;
+  disabled?: boolean;
 }
 
-const Button: FC<ButtonProps> = ({ href, action, label, className }: ButtonProps): JSX.Element => {
+const Button: FC<ButtonProps> = ({ href, action, label, className, disabled }: ButtonProps): JSX.Element => {
   const externalClass = className ? className : '';
-  const btnClass = `${styles.btn} bit-border ${externalClass}`;
+  const disabledClass = disabled ? `bit-border-disabled ${styles.disabled}` : '';
+  const btnClass = `${styles.btn} bit-border ${externalClass} ${disabledClass}`;
 
   if (href) {
     return (

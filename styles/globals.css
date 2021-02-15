@@ -33,3 +33,7 @@ body {
   border-right-width: 5px;
   @apply top-0 h-full border-solid border-secondary;
 }
+
+.bit-border-disabled:after, .bit-border-disabled:before {
+  @apply border-opacity-40;
+}
