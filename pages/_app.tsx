@@ -7,7 +7,7 @@ const App: FC<AppProps> = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <>
       <Head>
-        <title>Snake Versus</title>
+        <title>SnakeVersus</title>
       </Head>
       <Component {...pageProps} />
     </>
