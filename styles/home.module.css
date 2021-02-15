@@ -1,0 +1,27 @@
+.wrapper {
+  @apply flex items-center justify-center w-screen h-screen;
+}
+
+.github-icon {
+  @apply absolute inline-flex bottom-4 right-4;
+}
+
+.menu {
+  @apply flex flex-col items-center m-auto;
+}
+
+.menu > h1 {
+  @apply mb-8 text-8xl;
+}
+
+.menu > nav {
+  @apply flex flex-row items-center text-2xl;
+}
+
+.option {
+  @apply mr-8;
+}
+
+.option:last-child {
+  @apply mr-0;
+}
