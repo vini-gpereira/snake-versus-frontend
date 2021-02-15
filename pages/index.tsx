@@ -9,18 +9,18 @@ const Home: FC = (): JSX.Element => {
       <main className={styles.menu}>
         <h1>SnakeVersus</h1>
         <nav>
-          <Button className={styles.option} href="/rooms/create" label="Play" />
+          <Button className={styles.option} href="/rooms/create" label="Create" />
           <Button className={styles.option} href="/rooms" label="Join" />
         </nav>
+        <a
+          className={styles['github-icon']}
+          href="https://github.com/vini-gpereira/snake-versus-frontend"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src="/github-icon.png" height={60} width={60} />
+        </a>
       </main>
-      <a
-        className={styles['github-icon']}
-        href="https://github.com/vini-gpereira/snake-versus-frontend"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image src="/github-icon.png" height={60} width={60} />
-      </a>
     </div>
   );
 };
