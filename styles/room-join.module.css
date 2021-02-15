@@ -1,0 +1,31 @@
+.container {
+  width: 35rem;
+  grid-template-areas:
+    'nick nick nick'
+    'rooms rooms rooms'
+    'id id button';
+  @apply grid gap-4;
+}
+
+.input:first-of-type {
+  grid-area: nick;
+  @apply w-full h-10;
+}
+
+.input:last-of-type {
+  grid-area: id;
+}
+
+.rooms {
+  height: 25rem;
+  grid-area: rooms;
+}
+
+.rooms > ul {
+  @apply w-full h-full overflow-y-auto;
+}
+
+.button {
+  grid-area: button;
+  @apply h-10;
+}
