@@ -4,9 +4,10 @@
 
 .input {
   background-color: transparent;
+
   @apply w-full;
 }
 
 .input::placeholder {
-  color: rgba(0, 0, 0, 0.4)
+  color: rgba(0, 0, 0, 0.4);
 }
