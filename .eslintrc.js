@@ -27,5 +27,12 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-null-assertion': 0,
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
+    'react/prop-types': 'off',
   },
 };
