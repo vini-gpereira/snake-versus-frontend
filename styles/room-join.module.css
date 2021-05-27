@@ -4,11 +4,13 @@
     'nick nick nick'
     'rooms rooms rooms'
     'id id button';
+
   @apply grid gap-4;
 }
 
 .input:first-of-type {
   grid-area: nick;
+
   @apply w-full h-10;
 }
 
@@ -27,5 +29,6 @@
 
 .button {
   grid-area: button;
+
   @apply h-10;
 }
