@@ -1,15 +1,17 @@
 import React, { FC } from 'react';
 import Layout from 'components/layout';
+import Input from 'components/input';
 
 const CreateRoom: FC = (): JSX.Element => {
   return (
     <Layout>
       <form>
         <label htmlFor="room-name">Room&apos;s name</label>
-        <input type="text" id="room-name" name="room-name" />
-        <label>Players</label>
-        <input type="number" min="2" max="10" />
-        <label>Private</label>
+        <Input type="text" id="room-name" name="room-name" />
+        <label htmlFor="players-counting">Players</label>
+        <Input type="number" id="players-counting" min="2" max="10" />
+        <label htmlFor="checkbox">Private</label>
+        <Input type="checkbox" id="checkbox" name="checkbox" />
       </form>
     </Layout>
   );
