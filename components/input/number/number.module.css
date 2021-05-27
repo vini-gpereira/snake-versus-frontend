@@ -1,0 +1,12 @@
+.wrapper {
+  @apply flex items-center p-2;
+}
+
+.input {
+  background-color: transparent;
+
+  @apply w-10 h-10;
+}
+
+.button {
+}

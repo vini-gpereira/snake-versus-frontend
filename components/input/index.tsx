@@ -1,19 +1,29 @@
 import React, { ChangeEvent, FC } from 'react';
-import styles from './input.module.css';
+import TextInput, { TextInputProps } from './text';
+import NumberInput, { NumberInputProps } from './number';
+import CheckboxInput, { CheckboxInputProps } from './checkbox';
 
-interface InputProps {
+export interface InputProps {
+  type?: string;
+  id?: string;
+  name?: string;
   value?: string;
-  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (e: ChangeEvent<HTMLElement>) => void;
   className?: string;
-  placeholder?: string;
 }
 
-const Input: FC<InputProps> = ({ value, onChange, className, placeholder }: InputProps): JSX.Element => {
-  return (
-    <div className={`bit-border ${styles.wrapper} ${className}`}>
-      <input className={styles.input} type="text" placeholder={placeholder} value={value} onChange={onChange} />
-    </div>
-  );
+type InputTypes = TextInputProps | NumberInputProps | CheckboxInputProps;
+
+const Input: FC<InputProps> = (props): JSX.Element => {
+  const inputs: Record<string, React.FC<InputTypes>> = {
+    text: TextInput,
+    number: NumberInput,
+    checkbox: CheckboxInput,
+  };
+
+  const Input = inputs[props.type] ? inputs[props.type] : TextInput;
+
+  return <Input {...props} />;
 };
 
 export default Input;

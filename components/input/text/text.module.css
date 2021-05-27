@@ -1,0 +1,13 @@
+.wrapper {
+  @apply flex items-center p-2;
+}
+
+.input {
+  background-color: transparent;
+
+  @apply w-full;
+}
+
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}

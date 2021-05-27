@@ -1,0 +1,7 @@
+.wrapper {
+  @apply inline-flex;
+}
+
+.input {
+  @apply w-6 h-6 appearance-none;
+}
